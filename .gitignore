@@ -13,7 +13,11 @@
 node_modules/
 bower-components/
 bower_components/
-build/
 
 #Misc
 *.sublime-workspace
+
+#Project specific
+build/
+styles/*.css
+styles/*.map
