@@ -1,0 +1,27 @@
+{
+  "name": "untitled_project",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "author": "Henner Woehler",
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^3.0.3"
+  },
+  "scripts": {
+    "build": "npm run build:styles -s; npm run pack",
+    "pack": "autopack",
+    "build:styles": "sass styles/style.scss styles/style.css",
+    "watch": "nodemon --exec 'npm run build:styles' ./styles/style.scss",
+    "serve": "node_modules/instant-server/bin/instant -p 9090 -o",
+    "live-reload": "live-reload --port 35729",
+    "dev": "parallelshell \"npm run serve -s\" \"npm run watch -s\"",
+    "build:images": "glue ./items/ --img=. --css=. --sprite-namespace= --namespace= --margin=1"
+  },
+  "devDependencies": {
+    "instant": "^1.10.1",
+    "instant-server": "^2.0.0",
+    "nodemon": "^1.2.1",
+    "parallelshell": "^1.0.0"
+  }
+}
