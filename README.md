@@ -6,10 +6,10 @@ HTML5 Starter Template
 Run `npm install`.
 
 ### Development
-Run `npm dev`.
+Run `npm run dev`.
 
 ### Production
-Run `npm build`.
+Run `npm run build`.
 
 ## License
 Copyright 2015 Henner Wöhler. Licensed under the MIT license.
